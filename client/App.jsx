@@ -1,5 +1,4 @@
 import React from 'react';
-//import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
 import AppBar from 'material-ui/AppBar';
 import Paper from 'material-ui/Paper';
 import Toolbar from 'material-ui/Toolbar';
@@ -9,10 +8,7 @@ import Button from 'material-ui/Button';
 import Carousel from './Carousel.jsx';
 import PropTypes from 'prop-types';
 import TextField from 'material-ui/TextField';
-import {Radio,Checkbox, Dropdown,Header,Menu} from 'semantic-ui-react';
 import {HashRouter, Route, Link} from 'react-router-dom';
-
-import Collapsible from 'react-collapsible';
 import Dialog, {
   DialogActions,
   DialogContent,
