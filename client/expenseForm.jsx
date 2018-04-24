@@ -93,7 +93,7 @@ class expenseForm extends React.Component{
    }
 
   handleSave(){
- request.post('http://localhost:1100/addExpense').query({date: this.state.date, amount: this.state.amount,spentTowards: this.state.spentTowards,bill_voucher:this.state.selectedValue,spentBy: this.state.spentBy,
+ request.post('/addExpense').query({date: this.state.date, amount: this.state.amount,spentTowards: this.state.spentTowards,bill_voucher:this.state.selectedValue,spentBy: this.state.spentBy,
  spentFor:this.state.spentFor,modeOfCash:this.state.modeOfCash,description:this.state.description
   }).end((err, res) => {
            if(err)
