@@ -100,10 +100,7 @@ class expenseForm extends React.Component{
            {
              console.log(err);
            }
-
-  });
-
-
+         });
 }
 
   render()
@@ -121,7 +118,7 @@ class expenseForm extends React.Component{
           </Toolbar>
          </AppBar>
          <center>
-      <Paper style={{marginTop:"5px"}}>
+      <Paper style={{marginTop:"5px",width:"100%",height:"500px"}}>
           <form>
            <TextField id="date"
              label="Date"
@@ -225,14 +222,16 @@ class expenseForm extends React.Component{
                  />
              </Typography>
 
-             <TextField hinttext="Description" floatinglabeltext="Decsription" multiline={true} rows={2} label="Description" fullWidth={true} style={{
-        marginBottom: "15px", marginLeft:"130px"
-      }} onChange={this.handleDescription}/>
-
-
-      <Button onClick={this.handleSave} color="primary">
-        Save
-      </Button>
+             <TextField hinttext="Description" floatinglabeltext="Decsription" multiline={true} rows={2} label="Description"
+                style={{
+                marginBottom: "15px", marginLeft:"70px",width:"85%"
+              }}
+              onChange={this.handleDescription}
+            />
+            <Button onClick={this.handleSave}
+             style={{marginLeft:"800px",margiBottom:"10px"}} color="primary">
+              Save
+            </Button>
 
  </Paper>
 
